@@ -2,26 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/website-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Avi-Gym-Website</title>
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Header -->
     <header role="banner">
-      <h1>Welcome to my Website!</h1>
+      <h1>Welcome to my personal Gym Website!</h1>
     </header>
-    <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
 
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
+    <!-- Sidebar Positioned Below Header -->
+    <div class="sidebar">
+      <button
+        class="sidebar-button"
+        onclick="location.href='favorite-sessions.html'"
+      >
+        Favorite Sessions
+      </button>
+      <button class="sidebar-button">Calendar</button>
+      <button class="sidebar-button">Notes</button>
+      <button class="sidebar-button">Favorite Playlists</button>
+      <button class="sidebar-button" onclick="location.href='contact.html'">
+        Contact
+      </button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <div class="flex-container">
+        <!-- Flex item 1 -->
+        <div class="flex-item">
+          <h2>Today's Motivation</h2>
+          <!-- Styled motivation box -->
+          <div class="motivation-box">
+            <p id="motivation"></p>
+          </div>
+          <!-- Button to update motivation -->
+          <button class="start-button" onclick="updateMotivation()">
+            Get New Motivation
+          </button>
+        </div>
+
+        <!-- Flex item 2 -->
+        <div class="flex-item">
+          <img src="/public/workout.jpg" alt="Workout Image" />
+        </div>
       </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 Avi-Gym-Website. All rights reserved. Contact:
+      <a href="mailto:nukrai.avinoam@mail.huji.ac.il"
+        >nukrai.avinoam@mail.huji.ac.il</a
+      >
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>

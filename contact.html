@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/website-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avi-Gym-Website Contact</title>
+    <link href="/styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="contact-container">
+        <!-- Left: Contact Form -->
+        <div class="form-section">
+          <h2>Get in Touch</h2>
+          <p>If you have any questions or feedback, feel free to reach out:</p>
+          <form
+            action="mailto:nukrai.avinoam@mail.huji.ac.il"
+            method="post"
+            enctype="text/plain"
+          >
+            <label for="name">Your Name:</label><br />
+            <input type="text" id="name" name="name" required /><br /><br />
+
+            <label for="email">Your Email:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
+
+            <label for="message">Your Message:</label><br />
+            <textarea id="message" name="message" rows="5" required></textarea
+            ><br /><br />
+
+            <button type="submit" class="sidebar-button">Send</button>
+          </form>
+        </div>
+
+        <!-- Right: Envelope Image -->
+        <div class="image-section">
+          <img src="/public/env.png" alt="Envelope Image" />
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2024 Avi-Gym-Website. All rights reserved. Contact:
+      <a href="mailto:nukrai.avinoam@mail.huji.ac.il"
+        >nukrai.avinoam@mail.huji.ac.il</a
+      >
+    </footer>
+  </body>
+</html>
